@@ -1,0 +1,28 @@
+
+
+#main-navigation {
+	
+	/*@media only screen and (max-width: 1024px) 
+	@media only screen and (max-width: 1024px)*/
+	max-width: 90%;
+	width: 90%;
+	/*.main-menu nav*/
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    /*.main-menu nav*/
+    display: block;
+    /* '*' */
+    box-sizing: border-box;
+}
+
+#main-navigation ul {
+	width: 100%;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+
+.topcontainer {
+	padding: 25px;
+}

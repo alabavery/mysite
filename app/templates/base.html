@@ -1,0 +1,51 @@
+<!--
+- Approximate model: http://benpearce.nz/
+- Tasks:
+	- On index, background of gifs or pics of projects
+	- Large, see-through jumbotron for index
+	- Persistent link menu on every page (Index, Projects, Github, Contact)
+	- 
+-->
+
+<html>
+
+	<head>
+		{% if title %}
+		<title>{{title}}</title>
+		{% else %}
+		<title>Al Avery</title>
+		{% endif %}
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/static/css/bootstrap/bootstrap.css" rel="stylesheet" media="screen">
+		
+		<script src="/static/js/bootstrap.min.js"></script>
+
+		<link href="/static/css/index.css" rel="stylesheet" media="screen">
+	</head>
+
+	<body style="background-color: grey">
+		<div class="row">
+			<div class="col-md-2">
+				<nav id="main-navigation">
+						<ul>Index</ul>
+						<ul>Projects</ul>
+						<ul>Blog</ul>
+						<ul>GitHub</ul>	
+						<ul>Contact</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-10">
+				{% block firstsection %}{% endblock %}
+			</div>
+		</div>
+
+		{% block content %}{% endblock %}
+
+	</body>
+
+</html>
